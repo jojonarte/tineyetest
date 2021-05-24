@@ -13,8 +13,8 @@ const TinEyeApi = new TinEye(
 const app = express();
 
 const searchRoute = express.Router();
-searchRoute.get('/:url', async (req, res, next) => {
-	const url = req.params.url
+searchRoute.get('/', async (req, res, next) => {
+	const url = 'https://firebasestorage.googleapis.com/v0/b/fir-study-98929.appspot.com/o/standList%2Ftesla_stand.jpg?alt=media&token=66abb808-9fca-41cf-8f33-ce949aad3918';
 	const params = {
 		offset: 0,
 		limit: 10,
